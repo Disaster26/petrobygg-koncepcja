@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow" data-podglad>
+<title>Domy szkieletowe z drewna - Małopolska i Śląsk | Petrobygg Gdów</title>
+<meta name="description" content="Petrobygg z Gdowa buduje domy szkieletowe z drewna od projektu po wykończenie, a także wiaty, garaże, tarasy, pergole, schody i stolarkę. Doświadczenie ze Szwecji. Tel. 506 256 748.">
+<meta name="theme-color" content="#2B2A29">
+<link rel="icon" href="img/icon-192.png" type="image/png">
+<link rel="preload" href="fonts/saira-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/manrope-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/hero-tel.webp" media="(max-width:767px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-1920.webp" imagesrcset="img/hero-1280.webp 1280w, img/hero-1920.webp 1920w, img/hero-2560.webp 2560w" imagesizes="100vw" media="(min-width:768px)" fetchpriority="high">
+<style>
+@font-face{font-family:"Saira";font-style:normal;font-weight:100 900;font-display:swap;src:url(fonts/saira-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00F3,U+2013,U+2018-2019,U+201C-201E,U+2022,U+2026}
+@font-face{font-family:"Saira";font-style:normal;font-weight:100 900;font-display:swap;src:url(fonts/saira-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"Manrope";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/manrope-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B2,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026,U+20AC}
+@font-face{font-family:"Manrope";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/manrope-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+:root{--gr:#2B2A29;--gr2:#1F1E1D;--or:#E5782A;--or-t:#B4561A;--sz:#F1F2F3;--li:#DEE0E3;--tx:#45474B;--hd:72px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:var(--hd)}
+body{margin:0;font-family:Manrope,system-ui,sans-serif;font-size:16.5px;line-height:1.65;color:var(--gr);background:#fff;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.wrap{width:min(1200px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:Saira,Manrope,sans-serif;font-weight:700;line-height:1.08;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(30px,3.8vw,48px)}
+h3{font-size:22px;font-weight:650}
+p{margin:0 0 1em;color:var(--tx)}
+:focus-visible{outline:3px solid var(--or);outline-offset:3px}
+
+/* szkielet: podwalina + slupki w rownym rozstawie */
+.szk{height:20px;background:
+ linear-gradient(var(--c,var(--or)) 0 0) 0 0/100% 3px no-repeat,
+ linear-gradient(var(--c,var(--or)) 0 0) 0 100%/100% 3px no-repeat,
+ repeating-linear-gradient(90deg,var(--c,var(--or)) 0 5px,transparent 5px 46px) 0 0/100% 100% no-repeat}
+.szk-k{width:150px;height:14px;margin-top:20px}
+/* sloje: znacznik z przekroju pnia */
+.slo{flex:none;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font:700 17px/1 Saira,sans-serif;color:var(--gr);
+ background:radial-gradient(circle,#fff 0 13px,transparent 13.5px),repeating-radial-gradient(circle,transparent 0 4px,var(--or) 4.5px 6px);border:3px solid var(--gr)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 26px;border-radius:6px;font:700 16px/1 Manrope,sans-serif;text-decoration:none;border:2px solid var(--or);background:var(--or);color:#fff;transition:background .2s,border-color .2s;white-space:nowrap;cursor:pointer}
+.btn:hover{background:#CC6619;border-color:#CC6619}
+.btn-j{background:transparent;border-color:rgba(255,255,255,.7)}
+.btn-j:hover{background:rgba(255,255,255,.12);border-color:#fff}
+.btn svg{width:19px;height:19px;flex:none}
+
+/* naglowek */
+.top{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--li)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:var(--hd)}
+.logo img{width:200px;height:auto}
+.menu{display:flex;align-items:center;gap:28px}
+.menu a{text-decoration:none;font-weight:700;font-size:15.5px}
+.menu a:not(.btn):hover{color:var(--or-t)}
+.menu .btn{min-height:46px;padding:0 18px;font-size:15.5px}
+.burger{display:none;width:48px;height:48px;margin-right:-10px;border:0;background:none;padding:12px;cursor:pointer}
+.burger i{display:block;height:2.5px;background:var(--gr);margin:6px 0;transition:transform .2s,opacity .2s}
+.top.otw .burger i:nth-child(1){transform:translateY(8.5px) rotate(45deg)}
+.top.otw .burger i:nth-child(2){opacity:0}
+.top.otw .burger i:nth-child(3){transform:translateY(-8.5px) rotate(-45deg)}
+
+/* pierwszy ekran: zdjecie szkieletu na cala szerokosc */
+.hero{position:relative;color:#fff;background:var(--gr2);overflow:hidden}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%}
+.hero picture img{object-fit:cover;object-position:50% 40%}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:
+ linear-gradient(0deg,rgba(24,23,22,.93) 0,rgba(24,23,22,.72) 34%,rgba(24,23,22,.18) 64%,rgba(24,23,22,.05) 100%),
+ linear-gradient(90deg,rgba(24,23,22,.62) 0,rgba(24,23,22,0) 62%)}
+.hero-in{position:relative;z-index:2;min-height:min(calc(100svh - var(--hd) - 1px),900px);display:flex;flex-direction:column;justify-content:flex-end;padding-block:110px 64px}
+.hero h1{font-size:clamp(31px,4.6vw,66px);max-width:880px}
+.hero h1 span{display:block;color:#F7944A;font-weight:600;font-size:.62em;line-height:1.18;margin-top:.35em}
+.hero-lead{color:#EDEDEC;font-size:18.5px;max-width:610px;margin:24px 0 30px}
+.hero-btns{display:flex;flex-wrap:wrap;gap:14px}
+.hero-info{display:flex;flex-wrap:wrap;gap:6px 26px;margin-top:28px;font-size:15px;color:#D6D6D4}
+.hero-info b{color:#fff}
+.hero .szk{position:absolute;left:0;right:0;bottom:0;z-index:2}
+
+.sek{padding-block:clamp(72px,9vw,124px)}
+.szary{background:var(--sz)}
+.sek-tyt{max-width:760px;margin-bottom:48px}
+.sek-tyt p{margin:20px 0 0;font-size:18px}
+
+/* nazwa */
+.nazwa{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,500px);gap:clamp(40px,6vw,90px);align-items:center}
+.slowa{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:34px 0 30px}
+.slowo{border:1px solid var(--li);border-top:5px solid var(--gr);padding:20px 22px;border-radius:4px}
+.slowo b{display:block;font:700 30px/1 Saira,sans-serif;letter-spacing:.06em}
+.slowo span{display:block;margin-top:8px;font-size:15px;color:var(--tx)}
+.slowo:last-child{border-top-color:var(--or)}
+.nazwa-f{position:relative}
+.nazwa-f img{width:100%;border-radius:4px}
+.nazwa-f .szk{position:absolute;left:22px;right:22px;bottom:-10px}
+.liczby{display:flex;flex-wrap:wrap;gap:12px 36px;margin-top:6px}
+.liczby div b{display:block;font:700 34px/1 Saira,sans-serif;color:var(--or-t)}
+.liczby div span{font-size:14.5px;color:var(--tx)}
+.przyp{font-size:13px;color:#7A7D82;margin-top:14px}
+
+/* oferta */
+.oferta{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.of{background:#fff;border-radius:4px;overflow:hidden;display:flex;flex-direction:column;border-bottom:4px solid var(--gr)}
+.of img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.of-t{padding:24px 26px 28px;display:flex;flex-direction:column;gap:12px}
+.of-g{display:flex;align-items:center;gap:14px}
+.of p{margin:0;font-size:15.5px}
+.of-bez{background:var(--gr);color:#fff;border-bottom-color:var(--or);justify-content:flex-end;position:relative;overflow:hidden;min-height:340px}
+.of-bez::before{content:"";position:absolute;width:420px;height:420px;right:-150px;top:-170px;border-radius:50%;opacity:.16;background:repeating-radial-gradient(circle,transparent 0 13px,#fff 14px 15.5px)}
+.of-bez .of-t{position:relative}
+.of-bez p{color:#D2D2D0}
+.of-bez .slo{color:#fff;border-color:#fff;background:radial-gradient(circle,var(--gr) 0 13px,transparent 13.5px),repeating-radial-gradient(circle,transparent 0 4px,var(--or) 4.5px 6px)}
+.of-bez .of-t{padding-top:34px}
+.of-bez .btn{align-self:flex-start;margin-top:6px}
+
+/* jak budujemy - ciemna, sloje w tle */
+.ciemna{background:var(--gr);color:#fff;position:relative;overflow:hidden}
+.ciemna::before{content:"";position:absolute;width:900px;height:900px;right:-300px;top:-260px;border-radius:50%;opacity:.07;
+ background:repeating-radial-gradient(circle,transparent 0 22px,#fff 23px 25px)}
+.ciemna .wrap{position:relative}
+.ciemna p{color:#CFCFCD}
+.kroki{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;position:relative;padding-top:54px}
+.kroki::before{content:"";position:absolute;left:0;right:0;top:0;height:20px;background:
+ linear-gradient(#fff 0 0) 0 0/100% 3px no-repeat,linear-gradient(#fff 0 0) 0 100%/100% 3px no-repeat,
+ repeating-linear-gradient(90deg,rgba(255,255,255,.85) 0 5px,transparent 5px 46px) 0 0/100% 100% no-repeat;opacity:.5}
+.krok{position:relative}
+.krok::before{content:"";position:absolute;left:0;top:-54px;width:6px;height:34px;background:var(--or)}
+.krok b{display:block;font:700 46px/1 Saira,sans-serif;color:var(--or);margin-bottom:14px}
+.krok h3{font-size:20px;margin-bottom:10px}
+.krok p{margin:0;font-size:15.5px}
+
+/* realizacje */
+.real-g{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:40px}
+.real-g .sek-tyt{margin:0}
+.strz{display:flex;gap:10px;flex:none}
+.strz button{width:52px;height:52px;border-radius:6px;border:2px solid var(--gr);background:#fff;cursor:pointer;display:grid;place-items:center}
+.strz button:hover{background:var(--gr);color:#fff}
+.strz svg{width:20px;height:20px}
+.pas{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:14px;cursor:grab;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+.pas.ciag{cursor:grabbing;scroll-snap-type:none}
+.pas figure{margin:0;flex:0 0 auto;width:min(300px,72vw);scroll-snap-align:start}
+.pas img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:4px;user-select:none;-webkit-user-drag:none;background:var(--sz)}
+.pas figcaption{position:relative;padding-left:22px;margin-top:12px;font-weight:700;line-height:1.35}
+.pas figcaption::before{content:"";position:absolute;left:0;top:3px;width:12px;height:12px;border-radius:50%;border:3px solid var(--or)}
+.pas figcaption small{display:block;font-weight:500;color:#6E7176;font-size:14px}
+.pas-info{font-size:14px;color:#6E7176;margin:10px 0 0}
+
+/* zasieg */
+.zasieg{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,375px);gap:clamp(40px,6vw,90px);align-items:center}
+.woj{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 0;padding:0;list-style:none}
+.woj li{border:1px solid #CDD0D4;background:#fff;border-radius:4px;padding:8px 14px;font-weight:700;font-size:15px}
+.zasieg img{width:100%;max-width:375px}
+
+/* pytania */
+.faq-uk{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:56px;align-items:start}
+.faq-uk .sek-tyt{margin:0}
+.faq details{border-bottom:1px solid #CFD2D6}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;padding:22px 0;font-weight:700;font-size:18px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";flex:none;width:13px;height:13px;margin-top:7px;border-right:3px solid var(--or);border-bottom:3px solid var(--or);transform:rotate(45deg);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(-135deg);margin-top:13px}
+.faq details p{margin:0 0 22px}
+
+/* kontakt */
+.kontakt{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.dane{display:grid;gap:22px;margin:0 0 30px}
+.dane div{border-left:5px solid var(--or);padding-left:18px}
+.dane small{display:block;font-size:13.5px;color:#6E7176}
+.dane a,.dane span{font-weight:700;font-size:19px;text-decoration:none}
+.dane a:hover{color:var(--or-t)}
+.form{background:#fff;border:1px solid var(--li);border-top:5px solid var(--gr);border-radius:4px;padding:30px}
+.form h3{margin-bottom:20px}
+.form label{display:block;font-size:14px;font-weight:700;margin:0 0 6px}
+.form input,.form textarea,.form select{width:100%;font:inherit;font-size:16px;padding:13px 14px;border:1px solid #C7CACF;border-radius:4px;margin:0 0 16px;background:#fff;color:var(--gr)}
+.form textarea{min-height:110px;resize:vertical}
+.form .zgoda{display:flex;align-items:flex-start;gap:10px;font-size:13.5px;color:var(--tx);margin:0 0 18px;font-weight:500}
+.form .zgoda input{width:auto;margin:3px 0 0}
+.form .btn{width:100%}
+.form-ok{display:none;margin:14px 0 0;font-size:14.5px;color:var(--or-t);font-weight:700}
+.mapa{margin-top:30px;border-radius:4px;overflow:hidden;height:300px;background:var(--gr);color:#fff;position:relative}
+.mapa iframe{width:100%;height:100%;border:0;display:block}
+.mapa-z{height:100%;display:flex;flex-direction:column;justify-content:flex-end;gap:12px;padding:28px}
+.mapa-z .szk{position:absolute;left:0;right:0;top:0}
+.mapa-z b{font:700 24px/1.1 Saira,sans-serif}
+.mapa-z span{color:#CFCFCD;font-size:15px}
+.mapa-z .btn{align-self:flex-start}
+
+/* stopka */
+.stopka{background:var(--gr2);color:#BDBDBB;padding:56px 0 30px;font-size:15px}
+.st-g{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:40px}
+.st-g img{width:190px;opacity:.92}
+.st-g p{color:#BDBDBB;margin:18px 0 0;font-size:14.5px;max-width:300px}
+.stopka h4{color:#fff;margin:0 0 12px;font:700 16px/1.2 Saira,sans-serif;letter-spacing:.02em}
+.stopka a{text-decoration:none}
+.stopka a:hover{color:#fff}
+.stopka ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.st-d{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;margin-top:44px;padding-top:22px;border-top:1px solid #3A3938;font-size:14px}
+
+/* znak wykonawcy */
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+/* szerokie ekrany: zdjecie nie wieksze niz 2560 */
+@media (min-width:2561px){.hero picture{left:50%;width:2560px;transform:translateX(-50%)}.hero picture::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--gr2) 0,transparent 8%,transparent 92%,var(--gr2) 100%)}}
+
+@media (max-width:1080px){
+ .menu{gap:20px}.menu a.ukr{display:none}
+ .oferta{grid-template-columns:1fr 1fr}
+ .kroki{grid-template-columns:1fr 1fr;row-gap:64px}
+ .krok:nth-child(n+3)::before{top:-30px}
+ .st-g{grid-template-columns:1fr 1fr}
+}
+@media (max-width:860px){
+ :root{--hd:64px}
+ .logo img{width:168px}
+ .burger{display:block}
+ .menu{position:fixed;left:0;right:0;top:var(--hd);bottom:0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:12px 20px 30px;transform:translateX(100%);visibility:hidden;transition:transform .25s,visibility .25s;overflow-y:auto}
+ .top.otw .menu{transform:none;visibility:visible}
+ .menu a,.menu a.ukr{display:block;padding:17px 0;border-bottom:1px solid var(--li);font-size:19px}
+ .menu .btn{margin-top:22px;min-height:56px;font-size:17px;border-bottom:0;display:flex}
+ .nazwa,.zasieg,.faq-uk,.kontakt{grid-template-columns:1fr}
+ .nazwa-f{max-width:500px}
+ .zasieg img{max-width:340px}
+ .real-g{align-items:flex-start}
+}
+@media (max-width:767px){
+ .hero-in{padding-block:80px 52px}
+ .hero h1 span{font-size:.66em}
+ .hero-lead{font-size:16px;margin:16px 0 24px}
+ .hero-btns{flex-direction:column;align-items:stretch;gap:12px}
+ .hero-btns .btn{min-height:52px}
+ .hero-info{display:none}
+ .hero::before{background:linear-gradient(0deg,rgba(24,23,22,.95) 0,rgba(24,23,22,.82) 42%,rgba(24,23,22,.3) 70%,rgba(24,23,22,.08) 100%)}
+ .oferta{grid-template-columns:1fr}
+ .kroki{grid-template-columns:1fr;row-gap:30px;padding-top:44px}
+ .krok::before{display:none}
+ .krok{padding-left:22px;border-left:5px solid var(--or)}
+ .krok b{font-size:36px;margin-bottom:8px}
+ .strz{display:none}
+ .slowa{grid-template-columns:1fr 1fr;gap:12px}
+ .slowo{padding:16px}
+ .slowo b{font-size:23px}
+ .liczby{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+ .liczby div b{font-size:28px}
+ .liczby div span{font-size:13px;line-height:1.3;display:block;margin-top:4px}
+ .form{padding:22px 18px}
+ .st-g{grid-template-columns:1fr 1fr;gap:30px 20px}
+ .st-g>div:first-child{grid-column:1/-1}
+ .sek-tyt{margin-bottom:34px}
+ .sek-tyt p{font-size:16.5px}
+}
+</style>
+</head>
+<body>
+
+<header class="top" id="top">
+ <div class="wrap">
+  <a class="logo" href="#" aria-label="Petrobygg - strona główna"><img src="img/logo.png" width="592" height="130" alt="Petrobygg - domy drewniane"></a>
+  <button class="burger" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="menu"><i></i><i></i><i></i></button>
+  <nav class="menu" id="menu" aria-label="Menu główne">
+   <a href="#oferta">Oferta</a>
+   <a href="#realizacje">Realizacje</a>
+   <a href="#budowa" class="ukr">Jak budujemy</a>
+   <a href="#o-nas">O nas</a>
+   <a href="#kontakt">Kontakt</a>
+   <a class="btn" href="tel:+48506256748"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>506 256 748</a>
+  </nav>
+ </div>
+</header>
+
+<main>
+<section class="hero">
+ <picture>
+  <source media="(max-width:767px)" srcset="img/hero-tel.webp">
+  <img src="img/hero-1920.webp" srcset="img/hero-1280.webp 1280w, img/hero-1920.webp 1920w, img/hero-2560.webp 2560w" sizes="100vw" width="2560" height="1440" alt="Szkielet drewnianego domu z wiązarami dachowymi postawiony przez Petrobygg" fetchpriority="high">
+ </picture>
+ <div class="wrap hero-in">
+  <h1>Domy szkieletowe z&nbsp;drewna <span>Skandynawska jakość w polskim wydaniu</span></h1>
+  <p class="hero-lead">Petro to Piotr, bygg po szwedzku znaczy budować. Budownictwa drewnianego uczyliśmy się w Szwecji, a dziś stawiamy domy od projektu po wykończenie wnętrz w Małopolsce i sąsiednich województwach.</p>
+  <div class="hero-btns">
+   <a class="btn" href="tel:+48506256748"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>Zadzwoń: 506 256 748</a>
+   <a class="btn btn-j" href="#realizacje">Zobacz nasze domy</a>
+  </div>
+  <p class="hero-info"><span><b>Gdów</b> koło Wieliczki</span><span>Telefon: <b>7:00 - 19:00</b></span><span>Projekt, budowa, wykończenie</span></p>
+ </div>
+ <div class="szk" aria-hidden="true"></div>
+</section>
+
+<section class="sek" id="o-nas">
+ <div class="wrap nazwa">
+  <div>
+   <h2>Nazwa, która mówi, czym się zajmujemy</h2>
+   <div class="szk szk-k" aria-hidden="true"></div>
+   <div class="slowa">
+    <div class="slowo"><b>PETRO</b><span>Piotr, założyciel firmy</span></div>
+    <div class="slowo"><b>BYGG</b><span>po szwedzku: budowa, budować</span></div>
+   </div>
+   <p>Firma działa od listopada 2020 roku, ale nasz zespół buduje z drewna dłużej. Doświadczenie zdobywaliśmy w Szwecji, kraju, w którym o domach szkieletowych wie się wszystko. Stamtąd przywieźliśmy sposób pracy: dobre materiały, dokładność na każdym etapie i dom, który jest ciepły, trwały i zdrowy dla mieszkańców.</p>
+   <p>Każdy dom traktujemy indywidualnie. Kolory, materiały i rozwiązania ustalamy razem z inwestorem, zanim powstanie pierwszy słupek.</p>
+   <div class="liczby">
+    <div><b>57+</b><span>wybudowanych domów</span></div>
+    <div><b>41+</b><span>indywidualnych projektów</span></div>
+    <div><b>63+</b><span>podpisanych umów</span></div>
+   </div>
+   <p class="przyp">Liczby z obecnej strony petrobygg.pl.</p>
+  </div>
+  <div class="nazwa-f">
+   <img src="img/onas.webp" width="1040" height="1292" loading="lazy" alt="Drewniany dom w trakcie budowy, konstrukcja szkieletowa i taras">
+   <div class="szk" aria-hidden="true"></div>
+  </div>
+ </div>
+</section>
+
+<section class="sek szary" id="oferta">
+ <div class="wrap">
+  <div class="sek-tyt">
+   <h2>Budujemy z drewna. Od więźby po schody</h2>
+   <p>Tradycyjne i nowoczesne budownictwo drewniane: cały dom pod klucz albo pojedyncza konstrukcja na działce.</p>
+  </div>
+  <div class="oferta">
+   <article class="of">
+    <img src="img/of-domy.webp" width="800" height="600" loading="lazy" alt="Dom szkieletowy z elewacją z desek">
+    <div class="of-t"><div class="of-g"><span class="slo">01</span><h3>Domy szkieletowe</h3></div><p>Od podstaw aż po wykończenie. Pomagamy wybrać projekt, stawiamy konstrukcję i prowadzimy budowę do końca.</p></div>
+   </article>
+   <article class="of">
+    <img src="img/of-wiezby.webp" width="800" height="600" loading="lazy" alt="Drewniana konstrukcja domu z więźbą dachową na zboczu">
+    <div class="of-t"><div class="of-g"><span class="slo">02</span><h3>Konstrukcje i wiązary</h3></div><p>Hale, wiązary dachowe i konstrukcje drewniane, także jako osobne zlecenie dla Państwa budowy.</p></div>
+   </article>
+   <article class="of">
+    <img src="img/of-konstrukcje.webp" width="800" height="600" loading="lazy" alt="Drewniana wiata garażowa na kampera">
+    <div class="of-t"><div class="of-g"><span class="slo">03</span><h3>Wiaty, garaże, tarasy</h3></div><p>Garaże, wiaty, tarasy, pergole i mała architektura w ogrodzie, z drewna dobranego do budynku.</p></div>
+   </article>
+   <article class="of">
+    <img src="img/of-stolarka.webp" width="800" height="600" loading="lazy" alt="Elementy stolarskie z litego drewna w warsztacie">
+    <div class="of-t"><div class="of-g"><span class="slo">04</span><h3>Schody i stolarka</h3></div><p>Projekt i wykonanie schodów, barierek, balustrad i drzwi z drewna.</p></div>
+   </article>
+   <article class="of">
+    <img src="img/of-wnetrza.webp" width="800" height="600" loading="lazy" alt="Wnętrze domu z drewnianymi belkami stropowymi w trakcie wykończenia">
+    <div class="of-t"><div class="of-g"><span class="slo">05</span><h3>Wykończenie wnętrz</h3></div><p>Jeśli chcą Państwo, wykończymy też wnętrze: z drewnianymi akcentami, spokojnie i prosto.</p></div>
+   </article>
+   <article class="of of-bez">
+    <div class="of-t"><div class="of-g"><span class="slo">06</span><h3>Rozbiórka i transport domów</h3></div><p>Rozbieramy i przewozimy domy drewniane. Doradzamy też, jak zagospodarować otoczenie domu.</p><a class="btn" href="#kontakt">Zapytaj o wycenę</a></div>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section class="sek ciemna" id="budowa">
+ <div class="wrap">
+  <div class="sek-tyt">
+   <h2>Jak budujemy Państwa dom</h2>
+   <p>Nie trzeba znać się na budowie. Od tego jesteśmy my: prowadzimy przez wszystkie etapy, od pierwszego pomysłu po ostatnią listwę.</p>
+  </div>
+  <div class="kroki">
+   <div class="krok"><b>01</b><h3>Rozmowa i pomysł</h3><p>Ustalamy, co chcą Państwo zbudować i w jakim stylu: nowocześnie czy klasycznie.</p></div>
+   <div class="krok"><b>02</b><h3>Projekt</h3><p>Pomagamy wybrać projekt. Przedstawiamy argumenty za i przeciw, proponujemy najlepsze rozwiązania.</p></div>
+   <div class="krok"><b>03</b><h3>Szkielet i budowa</h3><p>Stawiamy konstrukcję ze sprawdzonych materiałów od zaufanych dostawców.</p></div>
+   <div class="krok"><b>04</b><h3>Wykończenie</h3><p>Dobieramy materiały i wykańczamy dom zgodnie z Państwa sugestiami.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="sek" id="realizacje">
+ <div class="wrap">
+  <div class="real-g">
+   <div class="sek-tyt">
+    <h2>Nasze domy i konstrukcje</h2>
+    <p>Zdjęcia z budów w Małopolsce i na Śląsku. Na docelowej stronie każda realizacja dostanie własną podstronę z opisem.</p>
+   </div>
+   <div class="strz"><button type="button" data-kier="-1" aria-label="Poprzednie zdjęcia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 5l-7 7 7 7"/></svg></button><button type="button" data-kier="1" aria-label="Następne zdjęcia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 5l7 7-7 7"/></svg></button></div>
+  </div>
+  <div class="pas" data-pas>
+   <figure><img src="img/g-czarny.webp" width="600" height="800" loading="lazy" alt="Nowoczesny dom szkieletowy z czarną elewacją i tarasem"><figcaption>Dom z czarną elewacją <small>z tarasem</small></figcaption></figure>
+   <figure><img src="img/g-kasina.webp" width="600" height="800" loading="lazy" alt="Nowoczesny dom szkieletowy w Kasinie Wielkiej zimą"><figcaption>Kasina Wielka <small>dom nowoczesny</small></figcaption></figure>
+   <figure><img src="img/g-skawina.webp" width="600" height="800" loading="lazy" alt="Dom szkieletowy w Skawinie z drewnianymi balkonami"><figcaption>Skawina <small>dom jednorodzinny</small></figcaption></figure>
+   <figure><img src="img/g-rabka.webp" width="600" height="800" loading="lazy" alt="Drewniany dom w Rabce"><figcaption>Rabka <small>dom drewniany</small></figcaption></figure>
+   <figure><img src="img/g-zawoja.webp" width="600" height="800" loading="lazy" alt="Drewniany dom w Zawoi"><figcaption>Zawoja <small>dom drewniany</small></figcaption></figure>
+   <figure><img src="img/g-weranda.webp" width="600" height="800" loading="lazy" alt="Drewniany dom z dużą werandą"><figcaption>Dom z werandą <small>elewacja z drewna</small></figcaption></figure>
+   <figure><img src="img/g-dabrowa.webp" width="600" height="800" loading="lazy" alt="Drewniana pergola przy domu w Dąbrowie Górniczej"><figcaption>Dąbrowa Górnicza <small>pergola</small></figcaption></figure>
+   <figure><img src="img/g-dom.webp" width="600" height="800" loading="lazy" alt="Dom z drewnianą werandą o zachodzie słońca"><figcaption>Weranda przy domu <small>konstrukcja drewniana</small></figcaption></figure>
+   <figure><img src="img/g-owczarnia.webp" width="600" height="800" loading="lazy" alt="Budowa w Owczarni, dach i membrana na ścianach"><figcaption>Owczarnia <small>w trakcie budowy</small></figcaption></figure>
+   <figure><img src="img/g-zabrze.webp" width="600" height="800" loading="lazy" alt="Szkielet piętrowego domu w Zabrzu"><figcaption>Zabrze <small>szkielet domu</small></figcaption></figure>
+   <figure><img src="img/g-szkielet.webp" width="600" height="800" loading="lazy" alt="Szkielet domu z panelami słonecznymi na dachu"><figcaption>Szkielet z dachem <small>w trakcie budowy</small></figcaption></figure>
+   <figure><img src="img/g-pergola.webp" width="600" height="800" loading="lazy" alt="Drewniana pergola przy domu"><figcaption>Pergola <small>mała architektura</small></figcaption></figure>
+   <figure><img src="img/g-wnetrze.webp" width="600" height="800" loading="lazy" alt="Ściany szkieletowe wewnątrz domu w trakcie budowy"><figcaption>Ściany szkieletowe <small>od środka</small></figcaption></figure>
+  </div>
+  <p class="pas-info">Przesuń palcem lub myszą, żeby zobaczyć więcej.</p>
+ </div>
+</section>
+
+<section class="sek szary">
+ <div class="wrap zasieg">
+  <div>
+   <h2>Gdzie budujemy</h2>
+   <div class="szk szk-k" aria-hidden="true"></div>
+   <p style="margin-top:26px">Siedziba firmy jest w Gdowie koło Wieliczki. Budujemy w ośmiu województwach południowej i środkowej Polski.</p>
+   <ul class="woj">
+    <li>małopolskie</li><li>śląskie</li><li>podkarpackie</li><li>świętokrzyskie</li><li>opolskie</li><li>łódzkie</li><li>lubelskie</li><li>mazowieckie</li>
+   </ul>
+  </div>
+  <img src="img/mapa.webp" width="750" height="655" loading="lazy" alt="Mapa Polski z zaznaczonymi województwami, w których buduje Petrobygg">
+ </div>
+</section>
+
+<section class="sek">
+ <div class="wrap faq-uk">
+  <div class="sek-tyt">
+   <h2>Zanim zaczniemy</h2>
+   <p>Najczęstsze pytania przed budową domu z drewna.</p>
+  </div>
+  <div class="faq">
+   <details open><summary>Nie wiem, od czego zacząć. Co robić?</summary><p>Nie trzeba się na tym znać. Jeśli wiedzą Państwo, co chcą zbudować, przeprowadzimy przez wszystkie etapy: od wstępnego planowania, przez projekt, po budowę i wykończenie.</p></details>
+   <details><summary>Na co zwrócić uwagę przy projekcie?</summary><p>Każdy dom jest inny, dlatego najpierw ustalamy, jak Państwo go sobie wyobrażają. Przedstawiamy argumenty za i przeciw poszczególnym rozwiązaniom i proponujemy najlepsze.</p></details>
+   <details><summary>Czy wykończycie też wnętrze?</summary><p>Tak. Dobieramy materiały i wykańczamy dom zgodnie z Państwa sugestiami, także z drewnianymi akcentami we wnętrzu.</p></details>
+   <details><summary>Czy budujecie poza Małopolską?</summary><p>Tak, budujemy w województwach: małopolskim, śląskim, podkarpackim, świętokrzyskim, opolskim, łódzkim, lubelskim i mazowieckim.</p></details>
+  </div>
+ </div>
+</section>
+
+<section class="sek szary" id="kontakt">
+ <div class="wrap">
+  <div class="sek-tyt">
+   <h2>Porozmawiajmy o Państwa domu</h2>
+   <p>Najszybciej telefonicznie, codziennie od 7:00 do 19:00. Można też zostawić wiadomość, oddzwonimy.</p>
+  </div>
+  <div class="kontakt">
+   <div>
+    <div class="dane">
+     <div><small>Telefon</small><a href="tel:+48506256748">506 256 748</a></div>
+     <div><small>E-mail</small><a href="mailto:piotr.marciniak@interia.eu">piotr.marciniak@interia.eu</a></div>
+     <div><small>Adres</small><span>Gdów 1048, 32-420 Gdów</span></div>
+     <div><small>Facebook</small><a href="https://www.facebook.com/Petrobygg" rel="noopener">facebook.com/Petrobygg</a></div>
+    </div>
+    <div class="mapa" id="mapa">
+     <div class="mapa-z"><div class="szk" aria-hidden="true"></div><b>Gdów 1048</b><span>32-420 Gdów, powiat wielicki</span><button class="btn" type="button">Pokaż mapę Google</button></div>
+    </div>
+   </div>
+   <form class="form" id="form">
+    <h3>Zapytanie o budowę</h3>
+    <label for="f-imie">Imię i nazwisko</label><input id="f-imie" name="imie" autocomplete="name">
+    <label for="f-tel">Telefon</label><input id="f-tel" name="tel" type="tel" autocomplete="tel">
+    <label for="f-co">Co chcą Państwo zbudować?</label>
+    <select id="f-co" name="co"><option>Dom szkieletowy</option><option>Wiata, garaż, taras lub pergola</option><option>Konstrukcja lub wiązary dachowe</option><option>Schody, balustrady, stolarka</option><option>Wykończenie wnętrza</option><option>Rozbiórka i transport domu</option></select>
+    <label for="f-msg">Wiadomość</label><textarea id="f-msg" name="msg" placeholder="Miejscowość, metraż, projekt, termin..."></textarea>
+    <label class="zgoda"><input type="checkbox"> Wyrażam zgodę na kontakt w sprawie zapytania.</label>
+    <button class="btn" type="submit">Wyślij zapytanie</button>
+    <p class="form-ok" id="form-ok">To podgląd strony - formularz zacznie działać na docelowej stronie.</p>
+   </form>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer class="stopka">
+ <div class="wrap">
+  <div class="st-g">
+   <div><img src="img/logo-biale.png" width="592" height="130" loading="lazy" alt="Petrobygg"><p>Domy szkieletowe i konstrukcje z drewna. Skandynawska jakość w polskim wydaniu.</p></div>
+   <div><h4>Oferta</h4><ul><li><a href="#oferta">Domy szkieletowe</a></li><li><a href="#oferta">Wiaty i garaże</a></li><li><a href="#oferta">Schody i stolarka</a></li><li><a href="#oferta">Wykończenie wnętrz</a></li></ul></div>
+   <div><h4>Firma</h4><ul><li><a href="#o-nas">O nas</a></li><li><a href="#realizacje">Realizacje</a></li><li><a href="#budowa">Jak budujemy</a></li><li><a href="#kontakt">Kontakt</a></li></ul></div>
+   <div><h4>Kontakt</h4><ul><li><a href="tel:+48506256748">506 256 748</a></li><li><a href="mailto:piotr.marciniak@interia.eu">piotr.marciniak@interia.eu</a></li><li>Gdów 1048, 32-420 Gdów</li></ul></div>
+  </div>
+  <div class="st-d">
+   <span>© 2026 Petrobygg Piotr Marciniak · <a href="#">Polityka prywatności</a></span>
+   <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=petrobygg.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+  </div>
+ </div>
+</footer>
+
+<script>
+// menu mobilne
+(function(){
+ var top=document.getElementById('top'),b=top.querySelector('.burger');
+ b.addEventListener('click',function(){var o=top.classList.toggle('otw');b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Zamknij menu':'Otwórz menu');document.body.style.overflow=o?'hidden':'';});
+ top.querySelectorAll('.menu a').forEach(function(a){a.addEventListener('click',function(){top.classList.remove('otw');b.setAttribute('aria-expanded','false');document.body.style.overflow='';});});
+})();
+// pas zdjec: przeciaganie mysza i strzalki
+document.querySelectorAll('[data-pas]').forEach(function(p){
+ var x0=0,s0=0,ciag=false;
+ p.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;ciag=true;x0=e.clientX;s0=p.scrollLeft;p.classList.add('ciag');});
+ window.addEventListener('pointermove',function(e){if(ciag)p.scrollLeft=s0-(e.clientX-x0);});
+ window.addEventListener('pointerup',function(){if(ciag){ciag=false;p.classList.remove('ciag');}});
+});
+document.querySelectorAll('[data-kier]').forEach(function(b){b.addEventListener('click',function(){var p=document.querySelector('[data-pas]');p.scrollBy({left:(p.clientWidth*.8)*b.dataset.kier,behavior:'smooth'});});});
+// mapa Google dopiero na klik
+document.querySelector('#mapa button').addEventListener('click',function(){
+ document.getElementById('mapa').innerHTML='<iframe title="Mapa dojazdu: Petrobygg, Gdów 1048" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Gd%C3%B3w+1048,+32-420+Gd%C3%B3w&output=embed"></iframe>';
+});
+// formularz pokazowy
+document.getElementById('form').addEventListener('submit',function(e){e.preventDefault();document.getElementById('form-ok').style.display='block';});
+</script>
+</body>
+</html>
